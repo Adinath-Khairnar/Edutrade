@@ -36,38 +36,42 @@
 ---
 
 
----
+------------------------------------------------------------------
 
-## ⚙️ Setup Instructions
-
-### 1️⃣ Backend (PHP + MySQL)
+⚙️ Setup Instructions
+1️⃣ Backend (PHP + MySQL)
 Open XAMPP Control Panel
 
 Start Apache and MySQL
 
-Go to phpMyAdmin and:
+Open phpMyAdmin in your browser
 
-Create a database named edutrade
-
-Import the edutrade.sql file
-Frontend (React)
+Create a new database named:
 
 
+edutrade
+Import the provided edutrade.sql file
 
-2️⃣ ```bash
+2️⃣ Frontend (React)
+
 cd MARKV
 npm install
-npm run dev 
+npm run dev
 
 3️⃣ Auth Server (Node.js)
-     cd auth-server
-    npm install
-    node index.js
 
-✉️ Email Verification Setup:
+cd auth-server
+npm install
+node index.js
 
-Open .env file inside auth-server
+✉️ Email Verification Setup
+Open the .env file inside the auth-server directory
 
-Set your Gmail address and an app-specific password
+Add your Gmail address and an app-specific password:
+
+EMAIL=your_email@gmail.com
+
+PASS=your_app_password
+⚠️ Make sure your Gmail account has 2-step verification enabled to generate an App Password.
 EMAIL=your_email@gmail.com
 PASS=your_app_password
